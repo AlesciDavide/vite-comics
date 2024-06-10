@@ -99,7 +99,7 @@ header{
                     flex-direction: row;
                         li{
                             margin: 0 1rem;
-                            padding: 2rem 0;
+                            padding: 3rem 0;
                             text-transform: uppercase;
                             
                         };

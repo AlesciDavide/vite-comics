@@ -27,13 +27,13 @@ export default{
         background-color: #1c1c1c;
         height: 10rem;
         @include flex-display;
-           
     };
 
     .container-main{
-
+        width: 80%;
         h1{
                 color: white;
+                
         };
     };
 </style>

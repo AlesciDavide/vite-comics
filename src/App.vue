@@ -3,12 +3,15 @@
 import HeaderApp from './components/HeaderApp.vue';
 import MainApp from './components/MainApp.vue';
 import FooterApp from './components/FooterApp.vue';
+import MerchApp from './components/MerchApp.vue';
+
 
 export default {
   components:{
     HeaderApp,
     MainApp,
     FooterApp,
+    MerchApp,
   }
 };
 
@@ -18,6 +21,7 @@ export default {
 
   <HeaderApp/>
   <MainApp/>
+  <MerchApp/>
   <FooterApp/>
 
 

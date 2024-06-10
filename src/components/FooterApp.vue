@@ -199,14 +199,14 @@ export default{
 footer{
     color: white;
     background-image: url(../assets/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
         div:nth-child(1){
             display: flex;
             justify-content: center;
-           
-
-            section:nth-child(1){
-                div{
+            section{
+                div:nth-child(1){
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
@@ -234,7 +234,17 @@ footer{
         background-image: url(../assets/img/dc-logo-bg.png);
         background-repeat: no-repeat;
         background-position: right;
-        background-size: contain;
+        background-size: auto;
+        div{
+            margin-right: 1.8rem;
+            ul{
+                li{
+                    a{
+                        color: #7f847f;
+                    };
+                };
+            };
+        };
     };
 
     .footer-links-one,

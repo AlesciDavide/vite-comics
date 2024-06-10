@@ -69,7 +69,7 @@ export default{
             </nav>
             <nav>
                 <ul>
-                    <li v-for="links in headerLinks" :key="headerLinks.id" :class="(headerLinks) ? 'active' : ''">
+                    <li v-for="links in headerLinks" :key="links.id" :class="(links.active) ? 'active' : ''">
                         {{ links.name }}
                     </li>
                 </ul>
@@ -79,28 +79,37 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/general.scss' as *;
+@use '../styles/general.scss';
 @use '../styles/partials/mixins' as *;
+@use '../styles/partials/variables' as *;
 
 header{
     @include flex-display;
 
     .container-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 100%;
-        nav{
-            ul{
-                display: flex;
-                flex-direction: row;
-                    li{
-                        margin: 1rem;
-
-                    };
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 80%;
+        padding: 0 1rem;
+            nav{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                        li{
+                            margin: 0 1rem;
+                            padding: 2rem 0;
+                            text-transform: uppercase;
+                            
+                        };
+                };
             };
-        };
+    }
+
+    .active{
+        border-bottom: 5px solid $main-color;
+        color: $main-color;
     }
 };
 

@@ -1,21 +1,25 @@
 <script>
 
-import MainHeader from './components/MainHeader.vue';
+import HeaderApp from './components/HeaderApp.vue';
+import MainApp from './components/MainApp.vue';
 
 export default {
   components:{
-    MainHeader,
+    HeaderApp,
+    MainApp,
   }
 };
 
 </script>
 
 <template>
-  
-  <MainHeader/>
+
+  <HeaderApp/>
+  <MainApp/>
+
 
 </template>
 
 <style lang="scss" scoped>
-
+@use './styles/general.scss' as *;
 </style>

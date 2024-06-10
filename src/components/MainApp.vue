@@ -33,7 +33,6 @@ export default{
         width: 80%;
         h1{
                 color: white;
-                
         };
     };
 </style>

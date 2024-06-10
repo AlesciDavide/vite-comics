@@ -92,7 +92,6 @@ header{
         justify-content: space-between;
         flex-direction: row;
         width: 80%;
-        padding: 0 1rem;
             nav{
                 ul{
                     display: flex;

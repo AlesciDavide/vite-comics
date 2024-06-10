@@ -203,6 +203,7 @@ footer{
         div:nth-child(1){
             display: flex;
             justify-content: center;
+           
 
             section:nth-child(1){
                 div{
@@ -216,7 +217,7 @@ footer{
                 text-transform: uppercase;
             };
             ul{
-                padding: 1rem;
+                padding: 1rem 0;
             }
             li{
                 margin-bottom: .3rem;
@@ -224,11 +225,16 @@ footer{
         };
 };
 
+
     .container-footer-links{
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         width: 80%;
+        background-image: url(../assets/img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
     };
 
     .footer-links-one,
@@ -256,7 +262,7 @@ footer{
         justify-content: space-between;
         flex-direction: row;
         width: 80%;
-        padding: 2rem;
+        padding: 2rem 0;
             div{
                 @include flex-display;
             }

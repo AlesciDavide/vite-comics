@@ -12,6 +12,8 @@ export default {
 
 <template>
   
+  <MainHeader/>
+
 </template>
 
 <style lang="scss" scoped>

@@ -161,13 +161,30 @@ export default{
                 </div>
             </section>
         </div>
-        <div>
+        <div class="second-footer">
             <section class="container-footer-social">
                 <div class="button">
-                    aaaaa
+                    <span class="button-footer">sign-up now!</span>
                 </div>
                 <div class="social">
-                    zzzz
+                    <h3>fallow us</h3>
+                    <ul>
+                        <li>
+                            <img src="../assets/img/footer-facebook.png" alt="Facebook">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-twitter.png" alt="Twitter">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-youtube.png" alt="youTube">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-pinterest.png" alt="Pinterest">
+                        </li>
+                        <li>
+                            <img src="../assets/img/footer-periscope.png" alt="Periscope">
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -177,19 +194,21 @@ export default{
 
 <style lang="scss" scoped>
 @use '../styles/general.scss' as *;
+@use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 footer{
     color: white;
     background-image: url(../assets/img/footer-bg.jpg);
-        div{
+
+        div:nth-child(1){
             display: flex;
             justify-content: center;
-            align-items: center;
+
             section:nth-child(1){
                 div{
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-start
+                    align-items: flex-start;
                 };
             };
             h2{
@@ -203,13 +222,15 @@ footer{
                 margin-bottom: .3rem;
             }
         };
-}
+};
+
     .container-footer-links{
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         width: 80%;
     };
+
     .footer-links-one,
     .footer-links-one-shop,
     .footer-links-two,
@@ -220,7 +241,44 @@ footer{
             };
         }
     };
-    .container-footer-social{
+
+    .second-footer{
         background-color: #303030;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    };
+
+    .container-footer-social{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 80%;
+        padding: 2rem;
+            div{
+                @include flex-display;
+            }
+    };
+
+    .button-footer{
+        padding: 1rem 1.5rem;
+        border: 2px solid $main-color;
+        text-transform: uppercase;
+    }
+
+    .social{
+        h3{
+            text-transform: uppercase;
+            color: $main-color;
+        };
+        ul{
+            display: flex;
+            flex-direction: row;
+            li{
+                padding-left: 1rem;
+            };
+        };
     };
 </style>

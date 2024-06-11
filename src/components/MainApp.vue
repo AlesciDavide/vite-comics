@@ -1,21 +1,21 @@
 <script>
+import ListProducts from './ListProducts.vue';
+
 export default{
     data() {
         return{
             
         }
+    },
+    components:{
+        ListProducts,
     }
 }
 </script>
 
 <template>
     <main>
-        <section class="container-main">
-            <h1>
-            --> Content goes here <--
-            </h1>
-
-        </section>
+            <ListProducts/>
     </main>
 </template>
 
@@ -25,14 +25,8 @@ export default{
 
     main{
         background-color: #1c1c1c;
-        height: 10rem;
+        
         @include flex-display;
     };
 
-    .container-main{
-        width: 80%;
-        h1{
-                color: white;
-        };
-    };
 </style>

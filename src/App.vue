@@ -4,6 +4,7 @@ import HeaderApp from './components/HeaderApp.vue';
 import MainApp from './components/MainApp.vue';
 import FooterApp from './components/FooterApp.vue';
 import MerchApp from './components/MerchApp.vue';
+import JumbotronApp from './components/JumbotronApp.vue'
 
 
 export default {
@@ -12,6 +13,7 @@ export default {
     MainApp,
     FooterApp,
     MerchApp,
+    JumbotronApp,
   }
 };
 
@@ -20,6 +22,7 @@ export default {
 <template>
 
   <HeaderApp/>
+  <JumbotronApp/>
   <MainApp/>
   <MerchApp/>
   <FooterApp/>

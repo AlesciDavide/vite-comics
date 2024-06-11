@@ -26,11 +26,12 @@ export default{
     article{
             width: calc((100% / 6) - .8rem);
             margin-right: .8rem;
+            margin-bottom: 3rem;
 
             img{
                 width: 100%;
-                height: 60%;
-                margin-bottom: .5rem;
+                aspect-ratio: 1/1;
+                margin-bottom: .7rem;
                 
             };
             p{

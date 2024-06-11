@@ -1,4 +1,5 @@
 <script>
+import SingleProduct from './SingleProduct.vue';
 export default{
     data() {
         return{
@@ -77,17 +78,18 @@ export default{
                 },
             ],
         }
-    }
+    },
+    components:{
+        SingleProduct,
+    },
 }
 </script>
 
 <template>
     <section class="list-products">
-        <article class="single-card" v-for="(card ,index) in itemList" :key="index">
-            <img :src="card.thumb" alt="">
-            <p>{{ card.series }}</p>
-        </article>
+        <SingleProduct v-for="(card ,index) in itemList" :key="index" :singleProduct="card"/>
     </section>
+
 </template>
 
 <style lang="scss" scoped>
@@ -95,16 +97,8 @@ export default{
     .list-products{
         display: flex;
         flex-wrap: wrap;
-        margin: 2rem 0;
+        margin-top: 4rem;
         width: 80%;
-        .single-card{
-            
-            width: calc((100% / 6) );
-
-            img{
-                width: 100%;
-                height: 60%;
-            }
-        }
     };
+    
 </style>

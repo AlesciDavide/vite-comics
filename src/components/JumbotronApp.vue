@@ -20,7 +20,7 @@ export default{
 @use '../styles/partials/mixins' as *;
     section.container-jumbo{
         width: 100%;
-        height: 500px;
+        height: 300px;
         background-image: url(../assets/img/jumbotron.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -28,12 +28,16 @@ export default{
 
             div{
                 background-color: #0282f9;
-                width: 130px;
-                height: 50px;
+                padding: 1rem;
                 @include flex-display;
                 position: absolute;
-                top: 475px;
-                left: 200px;
+                top: 275px;
+                left: 170px;
+                p{
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 1.5rem
+                };
             }
     }
 </style>

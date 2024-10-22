@@ -22,9 +22,9 @@ export default{
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
     article{
-            width: calc((100% / 6) - .8rem);
+            width: calc(220px - .8rem);
             margin-right: .8rem;
             margin-bottom: 3rem;
 
@@ -33,7 +33,7 @@ export default{
                 aspect-ratio: 1/1;
                 margin-bottom: .7rem;
                 
-            };
+            }
             p{
                 color: white;
             }

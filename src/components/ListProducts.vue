@@ -86,34 +86,40 @@ export default{
 </script>
 
 <template>
-    <section class="list-products">
-        <SingleProduct v-for="(card ,index) in itemList" :key="index" :singleProduct="card"/>
+    <section>
 
-    <div><p>Load more</p></div>
+        <article class="list-products">
+            <SingleProduct v-for="(card ,index) in itemList" :key="index" :singleProduct="card"/>
+    
+        </article>
+        <div><p>Load more</p></div>
     </section>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/mixins' as *;
-
+section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    width: 80%;
+}
     .list-products{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 4rem;
-        width: 80%;
         justify-content: center;
 
-        div{
-                background-color: #0282f9;
-                padding: .6rem 3rem;
-                align-self: center;
-                margin-bottom: 1rem;
-                p{
-                    text-transform: uppercase;
-                    color: white;
-                };
-            };
     };
+    div{
+            background-color: #0282f9;
+            padding: .6rem 3rem;
+            align-self: center;
+            margin-bottom: 1rem;
+            p{
+                text-transform: uppercase;
+                color: white;
+            };
+        };
 
     
 
